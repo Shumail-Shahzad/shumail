@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function change_image() {
+            var imgText=document.getElementById('myImg') ,alt;
+            if(imgText=="ford") {
+            document.getElementById('myimg') .src="ferrari.jpg";
+            document.getElementById('myImg') .alt="ferrari";
+            document.getElementById('mytext').value="Ferrari Car";
+            }
+            else  {
+                document.getElementById('myImg').src="ford";
+                document.getElementById("myImg").alt="ford";
+                document.getElementById('mytext').value="Ford Car";
+            }
+        }
+    </script>
+    </body>
+</head>
+<body>
+    <img id="myImg" src="ford.jpg"width="300" height="300"alt="ford" /><br/>
+
+</body>
+</html>
